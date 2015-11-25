@@ -26,5 +26,10 @@ namespace App2
         {
             this.InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            textBlock.Text = calendarView1.SelectedDates.FirstOrDefault().ToString();
+        }
     }
 }
